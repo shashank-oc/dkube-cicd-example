@@ -6,8 +6,18 @@ Example project showing how to use DKube CICD in your project. To use CICD in yo
 ```
 conda_env:                        
   path: conda_env.yaml
-  r_install_script: install_r_pkgs.sh
 ```
+# Build project docker image using Dockerfile
+```
+Dockerfile: <path to Dockerfile>
+```
+# Register existing docker images with DKube
+```
+docker_envs: 
+  - <registry>/<prefix>/<image>:TAG
+  - <registry>/<prefix>/<image>@sha256:<digest>
+```
+
 # Build other docker images
 ```
 images:
