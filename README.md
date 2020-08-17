@@ -1,4 +1,4 @@
-# dkube-cicd-project
+# dkube-cicd-example
 
 Example project showing how to use DKube CICD in your project. To use CICD in your project repository, create .dkube-ci.yml.
 
