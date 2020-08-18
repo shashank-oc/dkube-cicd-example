@@ -1,2 +1,4 @@
-conda_env:
+conda_env:             #precedence 3
   path: conda_env.yaml
+
+Dockerfile: Dockerfile #precedence 2
