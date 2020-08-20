@@ -1,7 +1,12 @@
-conda_env:             #precedence 3
-  path: conda_env.yaml
 
-docker_envs:           #precedence 1
-  - smizy/scikit-learn:0.23-alpine
-  
-Dockerfile: Dockerfile #precedence 2
+components:
+  path: kubeflow/components
+  components:
+    - my_add
+    - my_divide
+
+pipelines:
+  path: kubeflow/pipeline
+  pipelines:
+    - workflow.py
+      run: true
