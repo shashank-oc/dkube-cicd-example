@@ -8,5 +8,5 @@ components:
 pipelines:
   path: kubeflow/pipeline
   pipelines:
-    - workflow.py
+    - name: workflow.py
       run: true
