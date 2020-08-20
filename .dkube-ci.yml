@@ -2,8 +2,8 @@
 components:
   path: kubeflow/components
   components:
-    - my_add
-    - my_divide
+    - name: my_add
+    - name: my_divide
 
 pipelines:
   path: kubeflow/pipeline
