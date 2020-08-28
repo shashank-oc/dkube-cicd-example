@@ -23,8 +23,8 @@ docker_envs:
 images:
   path: images
   images:
-    - my-image1
-    - my-image2:
+    - name: my-image1
+    - name: my-image2
       base_image: python:alpine
  ```
   
