@@ -43,3 +43,11 @@ components: # defaults to all components if list is empty
     - name: workflow1.py
       run: true # run the pipeline. settings.yaml should contain the param's values
  ```
+ # Add dkube jobs template or run jobs
+```
+jobs: # 
+  path: jobs
+  components:
+    - name: train.yaml #jobs/train.yaml contains job configuration
+      run: true # run the job. 
+ ```

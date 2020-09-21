@@ -1,0 +1,44 @@
+name: testing
+token: dkube_token
+parameters:
+  class: training
+  training:
+    executor:
+      choice: dkube
+      dkube:
+        framework:
+          choice: tensorflow
+          details:
+            version: '2.0'
+            image: ocdr/d3-datascience-tf-cpu:v2.0
+    datums:
+      workspace:
+        data:
+          name: oc:titanic3
+          version: master
+        script: python main.py
+      models:
+      - name: oc:mnist
+        mountpath: "/opt/dkube/model/input"
+      datasets:
+      - name: oc:mnist
+        mountpath: "/opt/dkube/input"
+      outputs:
+      - name: oc:mnist
+        mountpath: "/opt/dkube/output"
+    hyperparams:
+      customkv: []
+      file:
+        name: ''
+        body: ''
+    nworkers: 0
+    ngpus: 0
+    gpus_override: false
+    rdma: false
+    tags: []
+    hptuning:
+      name: ''
+      body: ''
+  run:
+    template: ''
+    group: default
