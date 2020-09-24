@@ -47,7 +47,7 @@ components: # defaults to all components if list is empty
 ```
 jobs: # 
   path: jobs
-  components:
-    - name: train.yaml #jobs/train.yaml contains job configuration
+  jobs:
+    - name: [train.yaml](jobs/train.yaml) #jobs/train.yaml contains job configuration
       run: true # run the job. 
  ```
