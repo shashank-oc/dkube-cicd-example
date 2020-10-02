@@ -31,14 +31,14 @@ images:
 # Build kubeflow component and pipeline
 ```
 components: # defaults to all components if list is empty
-  path: components
+  path: kubeflow/components
   components:
     - name: my_add
     - name: my_divide
       base_image: python:alpine #Used when Dockerfile is missing
       
  pipelines:
-  path: pipelines
+  path: kubeflow/pipelines
   pipelines:
     - name: workflow1.py
       run: true # run the pipeline. settings.yaml should contain the param's values
