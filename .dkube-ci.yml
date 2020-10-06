@@ -1,5 +1,6 @@
-jobs:
-  path: jobs
-  jobs:
-    - name: train.yaml
-      run: true
+images:
+  path: images
+  images:
+    - name: my-image1
+    - name: my-image2
+      base_image: python:alpine
