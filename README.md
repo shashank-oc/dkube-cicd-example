@@ -39,6 +39,7 @@ components: # defaults to all components if list is empty
       
  pipelines:
   path: kubeflow/pipelines
+  token: <user's dkube token> # this is optional. If provided, pipelines will be uploaded on behalf of this user.
   pipelines:
     - name: workflow1.py
       run: true # run the pipeline. settings.yaml should contain the param's values
