@@ -37,7 +37,7 @@ components: # defaults to all components if list is empty
     - name: my_divide
       base_image: python:alpine #Used when Dockerfile is missing
       
- pipelines:
+pipelines:
   path: kubeflow/pipelines
   token: <user's dkube token> # this is optional. If provided, pipelines will be uploaded on behalf of this user.
   pipelines:
