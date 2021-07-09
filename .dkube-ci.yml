@@ -1,10 +1,1 @@
-components:
-  path: kubeflow/components
-  components:
-    - name: my_add
-    - name: my_divide
-
-pipelines:
-  path: kubeflow/pipeline
-  pipelines:
-    - name: workflow.py
+Dockerfile: ./images/my-image3/Dockerfile
