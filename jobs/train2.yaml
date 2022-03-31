@@ -15,11 +15,11 @@ parameters:
     datums:
       workspace:
         data:
-          name: 'mnist'
+          name: 'ocdkube:mnist'
           version: ''
         script: python mnist/train.py
       datasets:
-        - name: 'ocdkube:mnist'
+        - name: 'mnist'
           mountpath: /mnist
       outputs:
         - name: 'ocdkube:mnist'
