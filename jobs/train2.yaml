@@ -15,7 +15,7 @@ parameters:
     datums:
       workspace:
         data:
-          name: 'ocdkube:mnist'
+          name: 'mnist'
           version: ''
         script: python mnist/train.py
       datasets:
