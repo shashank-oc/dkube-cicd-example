@@ -1,6 +1,2 @@
-Dockerfile: ./images/my-image3/Dockerfile
-#jobs:
-#  path: jobs
-#  jobs:
-#    - name: train2.yaml
-#      run: true
+conda_env:                        
+  path: conda_env.yaml
