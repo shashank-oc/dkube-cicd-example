@@ -1,1 +1,5 @@
-Dockerfile: ./images/my-image1/Dockerfile
+jobs: # 
+  path: jobs
+  jobs:
+    - name: train.yaml #jobs/train.yaml contains job configuration
+      run: true # run the job. 
