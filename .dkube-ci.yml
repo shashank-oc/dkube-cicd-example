@@ -1,2 +1,1 @@
-conda_env:                        
-  path: conda_env.yaml
+Dockerfile: ./images/my-image3/Dockerfile
