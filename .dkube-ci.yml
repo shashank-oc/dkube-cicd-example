@@ -1,4 +1,5 @@
-Dockerfile: ./images/my-image3/Dockerfile
+Dockerfile: ./images/tf/Dockerfile
+#Dockerfile: ./images/my-image3/Dockerfile
 #jobs:
 #  path: jobs
 #  jobs:
