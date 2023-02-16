@@ -1,2 +1,2 @@
-Dockerfile: ./images/tf/Dockerfile
-
+conda_env:                        
+  path: conda_env.yaml_2
