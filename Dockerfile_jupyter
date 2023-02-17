@@ -1,1 +1,2 @@
-FROM jupyter/datascience-notebook:notebook-6.5.2
+FROM ocdr/dkube-datascience-tf-cpu:v2.3.0-17 
+#FROM jupyter/datascience-notebook:notebook-6.5.2
