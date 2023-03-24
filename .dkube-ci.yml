@@ -1,2 +1,13 @@
-conda_env:                        
-  path: conda_env.yaml_2
+components: # defaults to all components if list is empty
+  path: kubeflow/components
+  components:
+    - name: my_add
+    - name: my_divide
+      base_image: python:alpine #Used when Dockerfile is missing
+      
+pipelines:
+  path: kubeflow/pipeline
+  token: eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc0YmNkZjBmZWJmNDRiOGRhZGQxZWIyOGM2MjhkYWYxIn0.eyJ1c2VybmFtZSI6Im9jZGt1YmUiLCJyb2xlIjoiZGF0YXNjaWVudGlzdCxtbGUscGUsb3BlcmF0b3IiLCJkZXBsb3kiOmZhbHNlLCJleHAiOjQ5MTk1NzMxMzcsImlhdCI6MTY3OTU3MzEzNywiaXNzIjoiRGt1YmUifQ.68eJgmRfc2Xut9dqdFA9hzuCHLV_DYu7iRRYjKG0TFWNhIWDnMEJiJLkR5KDdD97gcNBtoph_r-VNj21cW0rU-aAlzZyKf289LtyxPeo3K96EjUNUsWyo0PiJk_qWRfBzYSXXS0xw2F4bVMWxV2_2AWEqqZ_i6sNqVUNOvXj2wpgCkY6SeLLPq9pe6OBZTWZqPkoS23BWTG-SghmF-W_rWIYvu95SI17BLXSM7iZ5Xd0N9C_t2-nBbSEFD-vw-oqon8bYI2vGe21boi2nlkLhQZg8Dl3cbt-BC9Xoh4Xe-KL758_KVTdCUSYuGfdKj1gFdJy8vWdXidcUnnLDI-AQQ
+  run: true
+  pipelines:
+    - name: workflow.py
